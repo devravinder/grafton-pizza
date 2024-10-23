@@ -1,5 +1,6 @@
 {
   "name": "pizza-shop",
+  "homepage": "/grafton-pizza",
   "private": true,
   "version": "0.0.0",
   "type": "module",
