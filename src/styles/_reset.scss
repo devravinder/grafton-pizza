@@ -1,0 +1,29 @@
+// overrirde default styles
+:root {
+  --scroll-width: 5px --scroll-height: 5px --scroll-radius: 10px --scroll-color:
+    var(--color-green-500);
+}
+
+// in webkit browser won't support css variables properly
+$scroll-width: 5px;
+$scroll-height: 5px;
+$scroll-radius: 10px;
+$scroll-color: var(--color-green-500);
+
+//custom scrollbar
+::-webkit-scrollbar {
+  width: $scroll-width;
+}
+::-webkit-scrollbar:horizontal {
+  height: $scroll-height;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  -webkit-border-radius: $scroll-radius;
+  border-radius: $scroll-radius;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-green-500);
+  -webkit-border-radius: $scroll-radius;
+  border-radius: $scroll-radius;
+}
